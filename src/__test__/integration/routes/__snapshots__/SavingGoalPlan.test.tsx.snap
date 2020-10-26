@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SavingGoalPlan /> matches snapshot 1`] = `
+<body>
+  <div>
+    <span
+      class="sc-htpNat daZEoS"
+    >
+      Let's plan your 
+      <strong>
+        saving goal.
+      </strong>
+    </span>
+    <div
+      class="sc-gzVnrw fGSdvJ"
+    >
+      <img
+        alt="House"
+        class="sc-htoDjs jMUYuv"
+        src="test"
+      />
+      <span
+        class="sc-dnqmqq fvEnnj"
+      >
+        Buy a house
+      </span>
+      <span
+        class="sc-iwsKbI hNxSrM"
+      >
+        Saving Goal
+      </span>
+      <button
+        class="sc-bZQynM sc-gZMcBi dNYqZl"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</body>
+`;
