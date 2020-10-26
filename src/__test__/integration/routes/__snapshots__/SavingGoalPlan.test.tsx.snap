@@ -29,6 +29,106 @@ exports[`<SavingGoalPlan /> matches snapshot 1`] = `
       >
         Saving Goal
       </span>
+      <div
+        class="sc-bxivhb eJipY"
+      >
+        <div
+          class="sc-ifAKCX drfbAu"
+        >
+          <label
+            class="sc-EHOje hUHzcE"
+          >
+            Total amount
+          </label>
+          <div
+            class="sc-gqjmRU nmdWE"
+          >
+            <span
+              class="sc-VigVT bwprYD"
+            >
+              $
+            </span>
+          </div>
+          <input
+            class="sc-jTzLTM kOnJoY"
+            data-testid="currency-input"
+            value="25,000"
+          />
+        </div>
+        <div
+          class="sc-ifAKCX drfbAu"
+        >
+          <label
+            class="sc-EHOje hUHzcE"
+          >
+            Reach goal by
+          </label>
+          <button
+            aria-label="Previous month"
+            class="sc-fjdhpX sc-cSHVUG kZwSCl"
+          >
+            <span
+              class="sc-jzJRlG sc-kAzzGY hjdSAT"
+            />
+          </button>
+          <div
+            class="sc-chPdSV NFjli"
+          >
+            <span
+              class="sc-kgoBCf kGDVNp"
+            >
+              November
+            </span>
+            <span
+              class="sc-kGXeez hqrVoV"
+            >
+              2020
+            </span>
+          </div>
+          <button
+            aria-label="Next month"
+            class="sc-fjdhpX sc-kpOJdX hUKzmS"
+          >
+            <span
+              class="sc-jzJRlG sc-dxgOiQ lfUDDp"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-ckVGcZ kBsJnU"
+      >
+        <div
+          class="sc-jKJlTe dlUGSI"
+        >
+          <span
+            class="sc-eNQAEJ daGrTI desktop"
+          >
+            Monthly amount
+          </span>
+          <span
+            class="sc-eNQAEJ daGrTI mobile"
+          >
+            Monthly
+          </span>
+          <span
+            class="sc-hMqMXs JSLtW"
+          >
+            $25,000
+          </span>
+        </div>
+        <div
+          class="sc-kEYyzF hyHEoA"
+        >
+          <label
+            class="sc-kkGfuU fksAJA"
+          >
+            <span>
+              You’re planning 1 monthly deposit to reach your $25,000 goal by November 2020.
+            </span>
+          </label>
+        </div>
+      </div>
       <button
         class="sc-bZQynM sc-gZMcBi dNYqZl"
       >

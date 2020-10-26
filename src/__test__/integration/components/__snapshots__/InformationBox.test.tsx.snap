@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InformationBox /> matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-gzVnrw ejlxmw"
+    >
+      <div
+        class="sc-htoDjs kUNGsP"
+      >
+        <span
+          class="sc-dnqmqq fbLvhl desktop"
+        >
+          Monthly amount
+        </span>
+        <span
+          class="sc-dnqmqq fbLvhl mobile"
+        >
+          Monthly
+        </span>
+        <span
+          class="sc-iwsKbI dTSlFv"
+        >
+          25,000
+        </span>
+      </div>
+      <div
+        class="sc-gZMcBi gjjmRo"
+      >
+        <label
+          class="sc-gqjmRU eskmOx"
+        >
+          You're planning 
+          <span>
+            <strong>
+              1 monthly deposit
+            </strong>
+          </span>
+           to reach your 
+          <strong>
+            $25,000
+          </strong>
+           goal by 
+          <strong>
+            November 2020.
+          </strong>
+        </label>
+      </div>
+    </div>
+  </div>
+</body>
+`;

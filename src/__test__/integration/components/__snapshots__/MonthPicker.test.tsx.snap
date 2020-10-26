@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MonthPicker /> matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-ifAKCX drfbAu"
+    >
+      <label
+        class="sc-EHOje hUHzcE"
+      >
+        Reach goal by
+      </label>
+      <button
+        aria-label="Previous month"
+        class="sc-gzVnrw sc-dnqmqq ejpLKN"
+      >
+        <span
+          class="sc-htoDjs sc-iwsKbI gEcacA"
+        />
+      </button>
+      <div
+        class="sc-gZMcBi jzBwSO"
+      >
+        <span
+          class="sc-gqjmRU jrJxfM"
+        >
+          December
+        </span>
+        <span
+          class="sc-VigVT cfNeXY"
+        >
+          2020
+        </span>
+      </div>
+      <button
+        aria-label="Next month"
+        class="sc-gzVnrw sc-jTzLTM YEbUE"
+      >
+        <span
+          class="sc-htoDjs sc-fjdhpX cpRatT"
+        />
+      </button>
+    </div>
+  </div>
+</body>
+`;

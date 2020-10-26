@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CurrencyInput /> matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-gzVnrw eDRxMu"
+    >
+      <label
+        class="sc-htoDjs fTBVLS"
+      >
+        Total amount
+      </label>
+      <div
+        class="sc-bdVaJa gbgDHS"
+      >
+        <span
+          class="sc-bwzfXH gvUvYq"
+        >
+          $
+        </span>
+      </div>
+      <input
+        class="sc-htpNat ipwnkg"
+        data-testid="currency-input"
+        value="25,000"
+      />
+    </div>
+  </div>
+</body>
+`;
