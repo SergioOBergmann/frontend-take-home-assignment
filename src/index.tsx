@@ -2,4 +2,16 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+import { savingGoalReducer } from './reducers/savingGoalPlan';
+
+const store = createStore(savingGoalReducer);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
