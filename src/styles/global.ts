@@ -64,6 +64,7 @@ export const InputDiv = styled.div`
     flex: 1;
     margin-right: 0;
     max-width: 100%;
+    min-width: 100%;
     &:not(:last-child) {
       flex: 1;
       margin-right: 0;
