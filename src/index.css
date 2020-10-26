@@ -1,0 +1,15 @@
+body, body input, body button {
+  margin: 0;
+
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #1c1e1f;
+}
+
+body div {
+  display: flex;
+}
