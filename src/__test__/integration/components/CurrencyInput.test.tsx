@@ -56,21 +56,42 @@ describe('<CurrencyInput />', () => {
     it('when a decimal value with 1 fraction non-significant digit has been inputted', () => {
       fireEvent.change(input, { target: { value: '1001.0' } });
 
-      expect(input).toHaveValue('10,010.00');
+      expect(input).toHaveValue('1,001.00');
       expect(onChange).toHaveBeenCalledTimes(1);
     });
 
     it('when a decimal value with 3 fractions digits has been inputted', () => {
       fireEvent.change(input, { target: { value: '1001.523' } });
 
-      expect(input).toHaveValue('10,015.23');
+      expect(input).toHaveValue('1,001.52');
+      expect(onChange).toHaveBeenCalledTimes(1);
+    });
+
+    it('when a decimal value with 0 fractions digits has been inputted', () => {
+      fireEvent.change(input, { target: { value: '1,001.' } });
+
+      expect(input).toHaveValue('1,001.00');
       expect(onChange).toHaveBeenCalledTimes(1);
     });
 
     it('when a dot has been typed at the last position of the value', () => {
-      fireEvent.change(input, { target: { value: '1001.' } });
+      fireEvent.change(input, { target: { value: '25,000.' } });
 
-      expect(input).toHaveValue('1,001.00');
+      expect(input).toHaveValue('25,000.00');
+      expect(onChange).toHaveBeenCalledTimes(1);
+    });
+
+    it('when a dot has been typed at the first position of the integer value', () => {
+      fireEvent.change(input, { target: { value: '.25,000' } });
+
+      expect(input).toHaveValue('0.25');
+      expect(onChange).toHaveBeenCalledTimes(1);
+    });
+
+    it('when a dot has been typed at any other position of the integer value', () => {
+      fireEvent.change(input, { target: { value: '2,5.50' } });
+
+      expect(input).toHaveValue('25.50');
       expect(onChange).toHaveBeenCalledTimes(1);
     });
   });
@@ -97,6 +118,13 @@ describe('<CurrencyInput />', () => {
       />
     );
     input = screen.getByTestId('currency-input');
+  });
+
+  it('handle change for valid decimal values > when a numeric char has been typed', () => {
+    fireEvent.change(input, { target: { value: '25,000.598' } });
+
+    expect(input).toHaveValue('250,005.98');
+    expect(onChange).toHaveBeenCalledTimes(1);
   });
 
   it('handle change for invalid decimal values > when a non-numeric char has been typed', () => {
