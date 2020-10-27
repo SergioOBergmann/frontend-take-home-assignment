@@ -24,15 +24,23 @@ const CurrencyInput = ({
       event.target.value.length >= 22 ||
       (!isNaN(totalAmount) && totalAmount < 0)
     ) {
-      event.target.value = event.target.defaultValue;
+      let totalAmountDefault = event.target.defaultValue;
+      if (totalAmountDefault.indexOf('.') !== -1) {
+        totalAmountDefault = totalAmountDefault.replace(/[, ]+/g, '');
+        totalAmountDefault = (+totalAmountDefault).toLocaleString(LOCALE, {
+          minimumFractionDigits: 2
+        });
+      }
+      event.target.value = totalAmountDefault;
     } else if (event.target.value.indexOf('.') !== -1) {
       const totalAmountText = event.target.value.replace(/[, ]+/g, '');
       const numberParts = totalAmountText.split('.');
-      const integer = numberParts[0];
       const fraction = numberParts[1];
       if (fraction.length > 2) {
         totalAmount = +totalAmountText.replace('.', '');
         totalAmount = totalAmount / 100;
+      } else if (fraction === '0') {
+        totalAmount = +totalAmountText.replace('.', '');
       } else if (fraction.length === 1) {
         totalAmount = +totalAmountText.replace('.', '');
         totalAmount = totalAmount / 100;
