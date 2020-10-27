@@ -41,16 +41,16 @@ exports[`<SavingGoalPlan /> matches snapshot 1`] = `
             Total amount
           </label>
           <div
-            class="sc-kGXeez duVMFQ"
+            class="sc-kAzzGY dwKwlG"
           >
             <span
-              class="sc-kpOJdX eRtiDv"
+              class="sc-chPdSV cOkIhq"
             >
               $
             </span>
           </div>
           <input
-            class="sc-dxgOiQ iwjOyv"
+            class="sc-kgoBCf iimgFU"
             data-testid="currency-input"
             value="25,000"
           />
@@ -65,63 +65,63 @@ exports[`<SavingGoalPlan /> matches snapshot 1`] = `
           </label>
           <button
             aria-label="Previous month"
-            class="sc-gqjmRU sc-jTzLTM bXOpKz"
+            class="sc-kGXeez sc-dxgOiQ jFReEj"
           >
             <span
-              class="sc-VigVT sc-fjdhpX hhrOyR"
+              class="sc-kpOJdX sc-ckVGcZ gdxucB"
             />
           </button>
           <div
-            class="sc-jzJRlG gAOZNv"
+            class="sc-jKJlTe gXWYqv"
           >
             <span
-              class="sc-cSHVUG csVdbX"
+              class="sc-eNQAEJ ikCAM"
             >
               November
             </span>
             <span
-              class="sc-kAzzGY cjaARq"
+              class="sc-hMqMXs ksCQLw"
             >
               2020
             </span>
           </div>
           <button
             aria-label="Next month"
-            class="sc-gqjmRU sc-chPdSV bbRBjX"
+            class="sc-kGXeez sc-kEYyzF iLBVsB"
           >
             <span
-              class="sc-VigVT sc-kgoBCf hYoQtO"
+              class="sc-kpOJdX sc-kkGfuU hjcLjk"
             />
           </button>
         </div>
       </div>
       <div
-        class="sc-ckVGcZ kBsJnU"
+        class="sc-gqjmRU cQXHhO"
       >
         <div
-          class="sc-jKJlTe dlUGSI"
+          class="sc-VigVT eDwNiB"
         >
           <span
-            class="sc-eNQAEJ daGrTI desktop"
+            class="sc-jTzLTM hSYWOl desktop"
           >
             Monthly amount
           </span>
           <span
-            class="sc-eNQAEJ daGrTI mobile"
+            class="sc-jTzLTM hSYWOl mobile"
           >
             Monthly
           </span>
           <span
-            class="sc-hMqMXs JSLtW"
+            class="sc-fjdhpX FSNEz"
           >
             $25,000
           </span>
         </div>
         <div
-          class="sc-kEYyzF hyHEoA"
+          class="sc-jzJRlG jXrHei"
         >
           <label
-            class="sc-kkGfuU fksAJA"
+            class="sc-cSHVUG fNKUAH"
           >
             You're planning 
             <span>

@@ -2,20 +2,15 @@ import * as React from 'react';
 
 import { PageTitle, InputGroup } from '../styles/global';
 
-import house from './../icons/house.svg';
+import house from '../icons/house.svg';
 
-import Card from './../components/Card';
-import MonthPicker from '../components/MonthPicker';
-import TotalAmountInput from '../containers/TotalAmountInput';
+import Card from '../components/Card';
+
 import PlanInformationBox from '../containers/PlanInformationBox';
+import TotalAmountInput from '../containers/TotalAmountInput';
+import ReachGoalByInput from '../containers/ReachGoalByInput';
 
 const SavingGoalPlan: React.FunctionComponent = () => {
-  const handleChange = () => {
-    return;
-  };
-  const handleMonthChange = () => {
-    return;
-  };
   return (
     <>
       <PageTitle>
@@ -25,14 +20,7 @@ const SavingGoalPlan: React.FunctionComponent = () => {
       <Card iconImg={house} iconText="House" title="Buy a house">
         <InputGroup>
           <TotalAmountInput />
-          <MonthPicker
-            label="Reach goal by"
-            minDate={{
-              year: new Date().getFullYear(),
-              month: new Date().getMonth() + 2
-            }}
-            onChange={handleMonthChange}
-          />
+          <ReachGoalByInput />
         </InputGroup>
         <PlanInformationBox />
       </Card>
