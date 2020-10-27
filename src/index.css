@@ -13,3 +13,7 @@ body, body input, body button {
 body div {
   display: flex;
 }
+
+body {
+  background: #f4f8fa;
+}

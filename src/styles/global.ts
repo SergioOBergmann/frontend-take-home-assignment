@@ -8,8 +8,6 @@ export const Root = styled.div`
   width: 100%;
   min-height: 880px;
   height: 100%;
-
-  background: #f4f8fa;
 `;
 
 export const Body = styled.div`
