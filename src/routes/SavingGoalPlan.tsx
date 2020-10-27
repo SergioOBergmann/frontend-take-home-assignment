@@ -5,9 +5,9 @@ import { PageTitle, InputGroup } from '../styles/global';
 import house from './../icons/house.svg';
 
 import Card from './../components/Card';
-import CurrencyInput from '../components/CurrencyInput';
 import MonthPicker from '../components/MonthPicker';
-import InformationBox from '../components/InformationBox';
+import TotalAmountInput from '../containers/TotalAmountInput';
+import PlanInformationBox from '../containers/PlanInformationBox';
 
 const SavingGoalPlan: React.FunctionComponent = () => {
   const handleChange = () => {
@@ -24,11 +24,7 @@ const SavingGoalPlan: React.FunctionComponent = () => {
       </PageTitle>
       <Card iconImg={house} iconText="House" title="Buy a house">
         <InputGroup>
-          <CurrencyInput
-            label="Total amount"
-            defaultValue="25,000"
-            onChange={handleChange}
-          />
+          <TotalAmountInput />
           <MonthPicker
             label="Reach goal by"
             minDate={{
@@ -38,17 +34,7 @@ const SavingGoalPlan: React.FunctionComponent = () => {
             onChange={handleMonthChange}
           />
         </InputGroup>
-        <InformationBox
-          desktopPrimaryMessageLabel="Monthly amount"
-          mobilePrimaryMessageLabel="Monthly"
-          primaryMessageValue="$25,000"
-          secondaryMessage={
-            <span>
-              You’re planning 1 monthly deposit to reach your $25,000 goal by
-              November 2020.
-            </span>
-          }
-        />
+        <PlanInformationBox />
       </Card>
     </>
   );

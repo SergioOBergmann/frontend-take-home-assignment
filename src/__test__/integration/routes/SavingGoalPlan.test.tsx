@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { render, RenderResult } from '@testing-library/react';
+import { render, RenderResult } from '../../test-utils';
 
 import SavingGoalPlan from './../../../routes/SavingGoalPlan';
 
